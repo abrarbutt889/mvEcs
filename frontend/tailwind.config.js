@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'wearly': {
+        'E Commerce': {
           50: '#f5f3ff',
           100: '#ede9fe',
           200: '#ddd6fe',

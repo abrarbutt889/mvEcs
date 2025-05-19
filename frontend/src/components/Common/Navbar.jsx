@@ -41,7 +41,7 @@ const Navbar = () => {
           <Link to="/collection/all/?gender=Men" className='text-sm font-medium text-gray-700 uppercase transition-colors hover:text-indigo-600 hover:border-b-2 hover:border-purple-600'>Men</Link>
           <Link to="/collection/all/?gender=Women" className='text-sm font-medium text-gray-700 uppercase transition-colors hover:text-indigo-600 hover:border-b-2 hover:border-purple-600'>Women</Link>
           <Link to="/collection/all/?category=Top wear" className='text-sm font-medium text-gray-700 uppercase transition-colors hover:text-indigo-600 hover:border-b-2 hover:border-purple-600'>Top Wear</Link>
-          <Link to="/collection/all/?category=Bottom wear" className='text-sm font-medium text-gray-700 uppercase transition-colors hover:text-indigo-600 hover:border-b-2 hover:border-indigo-600'>Bottom Wear</Link>
+          <Link to="/collection/all/?category=Bottom wear || category=Bottom Wear" className='text-sm font-medium text-gray-700 uppercase transition-colors hover:text-indigo-600 hover:border-b-2 hover:border-indigo-600'>Bottom Wear</Link>
         </div>
 
         {/* Icons Section */}

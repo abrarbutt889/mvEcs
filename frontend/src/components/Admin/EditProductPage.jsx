@@ -76,7 +76,7 @@ const EditProductPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(updateProduct({ id, productData }))
+        dispatch(updateProduct({ id, productData }));
         toast.success('Product updated successfully');
         navigate('/admin/products');
     };
@@ -111,8 +111,7 @@ const EditProductPage = () => {
                     { label: 'Product Name', name: 'name', type: 'text' },
                     { label: 'Price', name: 'price', type: 'number' },
                     { label: 'Count in Stock', name: 'countInStock', type: 'number' },
-                    { label: 'SKU', name: 'sku', type: 'text' },
-                    { label: 'Category', name: 'category', type: 'text' },
+                    { label: 'SKU', name: 'sku', type: 'text'  },
                     { label: 'Brand', name: 'brand', type: 'text' },
                     { label: 'Collections', name: 'collections', type: 'text' },
                     { label: 'Material', name: 'material', type: 'text' }
@@ -129,6 +128,24 @@ const EditProductPage = () => {
                         />
                     </div>
                 ))}
+
+                {/* Category Dropdown */}
+                <div className="mb-6">
+                    <label className="block mb-2 font-semibold">Category</label>
+                    <select
+                        name="category"
+                        value={productData.category}
+                        onChange={handleChange}
+                        required
+                        className="w-full p-2 border border-gray-500 rounded-md"
+                    >
+                        <option value="">Select Category</option>
+                        <option value="Top wear">Top Wear</option>
+                        <option value="Bottom wear">Bottom Wear</option>
+                        <option value="Men">Men</option>
+                        <option value="Women">Women</option>
+                    </select>
+                </div>
 
                 <div className="mb-6">
                     <label className="block mb-2 font-semibold">Description</label>
